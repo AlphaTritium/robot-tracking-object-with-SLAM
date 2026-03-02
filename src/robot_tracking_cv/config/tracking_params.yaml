@@ -1,0 +1,5 @@
+/tracker_node:
+  ros__parameters:
+    target_distance: 0.5  # The L distance
+    kp_linear: 1
+    kp_angular: 1
