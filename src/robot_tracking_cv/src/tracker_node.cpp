@@ -21,18 +21,18 @@ public:
         this->declare_parameter("target_distance", 0.25);
         // Linear PID gains
         this->declare_parameter("kp_lin", 1.0);
-        this->declare_parameter("ki_lin", 1.0);
-        this->declare_parameter("kd_lin", 4.0);
+        this->declare_parameter("ki_lin", 0.0);
+        this->declare_parameter("kd_lin", 3.0);
         // Angular PID gains
-        this->declare_parameter("kp_ang", 1.5);
+        this->declare_parameter("kp_ang", 1.0);
         this->declare_parameter("ki_ang", 0.0);
         this->declare_parameter("kd_ang", 2.0);
         // Integral wind-up limits
-        this->declare_parameter("lin_integral_max", 1.0);
-        this->declare_parameter("ang_integral_max", 1.0);
+        this->declare_parameter("lin_integral_max", 5.0);
+        this->declare_parameter("ang_integral_max", 5.0);
         // Velocity limits
-        this->declare_parameter("max_linear_vel", 0.5);
-        this->declare_parameter("max_angular_vel", 0.8);
+        this->declare_parameter("max_linear_vel", 5.0);
+        this->declare_parameter("max_angular_vel", 5.0);
 
         // --- Detection parameters ---
         this->declare_parameter("use_color_filter", true);
